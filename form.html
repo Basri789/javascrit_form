@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylef.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Feedback</h1>
+        <div class="time">
+            <span class="hms"></span>
+            <span class="ampm"></span>
+            <br>
+            <span class="date"></span>
+        </div>
+        <div class="row">
+            <div class=" col form1">
+                <form autocomplete="off" action="fm.html" method="post">
+                    <div>
+                        <lable>Name</lable>
+
+                        <td> <input class="put" type="text" name="fullname" placeholder="Enter your name"
+                                id="fullname" /></td>
+
+                    </div>
+                    <div>
+                        <lable>Email</lable>
+
+
+                        <input class="put" type="text" onkeyup="emailvalid()" name="email"
+                            placeholder="Enter your Email" id="email" required />
+
+                    </div>
+                    <div>
+                        <lable>Mobile No</lable>
+                        <small id="smobile">enter</small>
+                        <input class="put" type="text" name="number" placeholder="Mobile Number" id="mbno"
+                            maxlength="10" required />
+
+                    </div>
+                    <div>
+                        <lable id="loc">Location</lable>
+                        <input type="radio" name="location" class="loc">IND
+                        <input type="radio" name="location" class="loc">NRI
+                    </div>
+                    <div class="selct">
+                        <lable class="lad">Country</lable>
+                        <select id="select1">
+
+                            <option>India</option>
+                            <option>Srilanka</option>
+                            <option>Bangaladesh</option>
+                            <option>Nepal</option>
+                        </select>
+                    </div>
+                    <div class="selct">
+                        <lable class="lad">state</lable>
+                        <select id="select2">
+                            <option>Maharashtra</option>
+                            <option>Karnataka</option>
+                            <option>Telangana</option>
+                        </select>
+                    </div>
+                    <div class="selct">
+                        <lable class="lad">District</lable>
+                        <select id="select3">
+                        
+                            <option>Ahmednagar</option>
+                            <option>Akola</option>
+                            <option>Amravati</option>
+                            <option>Aurangabad</option>
+                            <option>Bagalkot</option>
+                            <option>Ballari</option>
+                            <option>Belagavi</option>
+                            <option>Bengaluru</option>
+                            <option>Sangareddy</option>
+                            <option> Siddipet</option>
+                            <option>Suryapet</option>
+                            <option>Vikarabad</option>
+                           
+                        </select>
+                    </div>
+
+                    <div>
+                        <lable>Feedback</lable>
+                        <small id="min">Minimum 5 words</small>
+                        <textarea type="text" maxlength="100" id="text" placeholder="write a meassge"></textarea>
+                        <small id="max">maximum word 100</small>
+                    </div>
+                    <div class="form-action-button">
+
+
+                        <input type="submit" class="btn btn-primary" id="submit" value="submit" />
+                        <input type="reset" class="btn btn-primary" id="reset" value="Reset" />
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <div class="table container1">
+        <table id="table" class="table">
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>number</th>
+                <th>Country</th>
+                <th>State</th>
+                <th>District</th>
+            </tr>
+
+        </table>
+
+    </div>
+    <script type="text/javascript" src="index.js">
+
+    </script>
+</body>
+
+</html>
